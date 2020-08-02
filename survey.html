@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FCC: Survey Form</title>
+  <link rel="stylesheet" href="survey.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<h1 id="title">Survey Design</h1>
+<p id="description">A survey to rate the design of this survey...whoa, meta.</p>
+<form id="survey-form">
+  <fieldset>
+    <legend>Truth and lies are welcome.</legend>
+    <label id="name-label" for="name">What is your name?</label>
+    <input id="name" placeholder="Full Name" type="text" required>
+<!--     <label class="error" for="name">Please enter your name.</label> -->
+    <label id="email-label" for="email">What is your email address?</label>
+    <input id="email" placeholder="Email Address" type="email" required>
+<!--     <label class="error" for="email">Please enter a proper email address.</label> -->
+    <label id="number-label" for="number">From 1-5, with 1 being needs improvement and 5 being well done, how would you rate the appearance of this form?</label>
+      <input id="number" min="1" max="5" placeholder="Your Rating" type="number">
+<!--     <label class="error" for="number">Please enter a number from 1 to 5.</label> -->
+    <label for="dropdown">What's your lucky number?</label>
+    <select id="dropdown">
+      <option>Select</option>
+      <option>42</option>
+      <option>3</option>
+      <option>777</option>
+    </select>
+    <label for="dogs" class="btn">Dog
+      <input type="radio" id="dogs" name="pet" value="yes" checked>
+    </label>
+    <label for="cats" class="btn">Cat
+      <input type="radio" id="cats" name="pet" value="no">
+    </label><br>
+    <label for="luffy" class="btn">Luffy
+      <input type="checkbox" value="Luffy" id="luffy" name="one-piece" checked>
+    </label>
+    <label for="zoro" class="btn">Zoro
+      <input type="checkbox" value="zoro" id="zoro" name="one-piece">
+    </label>
+    <label for="sanji" class="btn">Sanji
+      <input type="checkbox" value="sanji" id="sanji" name="one-piece">
+    </label><br>
+    <label class="btn">Any comments?</label>
+    <textarea></textarea>
+    <button type="submit" id="submit">submit</button>
+  </fieldset>
+</form>
+</body>
+</html>
