@@ -1,0 +1,144 @@
+body {
+  position:relative;
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+  line-height:1.4;
+}
+
+#navbar {
+  position:fixed;
+  top:0;
+  left:0;
+  width:22vw;
+  height:100vh;
+  background-color:#ebebeb;
+  display:inline-block;
+  padding:4vw;
+  margin:0;
+}
+
+nav > ul {
+  padding:0;
+  margin:0;
+  margin-top:4vh;
+  list-style-type:none;
+  text-decoration:none;
+}
+
+nav > ul > li {
+  margin-bottom: 2vh;
+}
+
+.nav-link {
+  text-decoration:none;
+  color:#000;
+  font-weight:bold;
+}
+
+footer {
+  position:fixed;
+  bottom:4vh;
+  left:4vw;
+  padding-right:4vw;
+  width:22vw;
+  font-size:.8rem;
+  color:#636363;
+}
+
+#main-doc {
+  position:fixed;
+  top:0;
+  left:30vw;
+  padding-left:4vw;
+  padding-top:12vh;
+  width:70vw;
+  height:100%;
+  background-color:#fbfbfb;
+}
+
+.main-container {
+  height:100%;
+  overflow-y:scroll;
+  padding-right:4vw;
+}
+
+.main-section {
+  margin-bottom:12vh;
+}
+
+.main-section > ul {
+  list-style-type:none;
+}
+
+header {
+  margin-bottom:2vh;
+}
+
+#keyframes {}
+
+@keyframes example {
+  from {background-color:blue;}
+  to {background-color:green;}
+}
+
+.key-anim {
+  margin:auto;
+  width:100px;
+  height:100px;
+  background-color:blue;
+  animation-name: example;
+  animation-duration: 3s;
+}
+
+#animation-name {}
+
+#animation-duration {}
+
+#animation-delay {}
+
+#animation-iteration-count {}
+
+code {
+  font-family:monospace;
+  color:crimson;
+  background-color:#f1f1f1;
+  padding:12px;
+  font-size:105%;
+}
+
+.padded-multiline {
+  font-family:monospace;
+  line-height:1.5;
+  padding:12px 0px 12px 20px;
+  background-color:#ebebeb;
+  margin-right:4vw;
+  color:crimson;
+}
+
+.comment {color:green;}
+.bracket {color:black;}
+.label {color:#800000;}
+.prop {color:crimson;}
+.val {color:blue;}
+
+@media only screen and (max-width:768px) {
+  #navbar {
+    position:relative;
+    top:0;
+    height:30vh;
+    width:100vw;
+    text-align:center;
+    display:flex;
+  }
+  
+  #navbar > header {
+    width:100%;
+  }
+  
+  #main-doc {
+    top:30vh;
+    left:0;
+    width:100%;
+  }
+}
