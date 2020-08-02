@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FCC: Technical Doc</title>
+  <link rel="stylesheet" href="tech-doc.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+<nav id="navbar">
+<!--  Add an x/hamburger icon when on mobile  -->
+  <header>
+    <h1>CSS Animations</h1>
+    <p>Looking into the properties that allow for developers to create css animations.</p>
+    </header>
+  <ul>
+    <li><a href="#keyframes" class="nav-link">keyframes</a></li>
+    <li><a href="#animation-name" class="nav-link">animation-name</a></li>
+    <li><a href="#animation-duration" class="nav-link">animation-duration</a></li>
+    <li><a href="#animation-delay" class="nav-link">animation-delay</a></li>
+    <li><a href="#animation-iteration-count" class="nav-link">animation-iteration-count</a></li>
+  </ul> 
+  <footer><a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">w3schools</a> was referenced and sourced for examples to create this technical document.</footer>
+</nav>
+<main id="main-doc">
+  <div class="main-container">
+  <section class="main-section" id="keyframes">
+    <header><h3>keyframes</h3></header>
+    <code>@keyframes</code>
+    <p>A <em>@keyframe</em> needs to be defined for an animation to be displayed. For it to work, the animation is bound to an element. The below < div > element is running the "example" animation. It will last for 3 seconds, and it will gradually change the background-color of the < div > element from "blue" to "green":</p>
+    <p><div class="key-anim"></div></p>
+    <ul>
+      <li>Example</li>
+      <li><div class="padded-multiline">
+        <span class="comment">/* The animation code */</span>
+        <br>
+        <span class="label">@keyframes example </span>&nbsp;&nbsp;<span class="bracket">{</span>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">from</span>&nbsp;<span class="bracket">{</span>&nbsp;<span class="prop">background-color</span><span class="val">: blue;</span><span class="bracket">}</span>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">to</span>&nbsp;<span class="bracket">{</span>&nbsp;<span class="prop">background-color</span><span class="val">: green;</span><span class="bracket">}</span>
+        <br>
+        <span class="bracket">}</span>
+        <br>
+        <span class="comment">/* The element to apply the animation to */</span>
+        <br>
+        <br>
+        <span class="label">div </span>&nbsp;&nbsp;<span class="bracket">{</span>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">width</span><span class="val">:100px;</span>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">height</span><span class="val">:100px;</span>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">background-color</span><span class="val">:blue;</span>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">animation-name</span><span class="val">:100px;</span>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">animation-duration</span><span class="val">:3s;</span>
+        <br>
+        <span class="bracket">}</span>
+      </div></li>
+    </ul>
+  </section>
+  <section class="main-section" id="animation-name">
+    <header><h3>animation-name</h3></header>
+    <code>animation-name</code>
+    <p>...</p>
+    <p><div class="key-anim-2"></div></p>
+    <ul>
+      <li>Example</li>
+      <li class="padded-multiline">
+        <span class="comment">/* The animation code */</span>
+        <br>
+        <span class="label">@keyframes example-2</span>&nbsp;&nbsp;<span class="bracket">{</span>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">0%</span>&nbsp;<span class="bracket">{</span><span class="prop">background-color</span><span class="val">: red;</span><span class="bracket">}</span>
+                <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">25%</span>&nbsp;<span class="bracket">{</span><span class="prop">background-color</span><span class="val">: yellow;</span><span class="bracket">}</span>
+                <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">50%</span>&nbsp;<span class="bracket">{</span><span class="prop">background-color</span><span class="val">: blue;</span><span class="bracket">}</span>
+                <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">100%</span>&nbsp;<span class="bracket">{</span><span class="prop">background-color</span><span class="val">: green;</span><span class="bracket">}</span>
+        <br>
+        <span class="bracket">}</span>
+        <br>
+        <br>
+        <span class="comment">/* The element to apply the animation to */</span>
+        <br>
+        <span class="label">div </span>&nbsp;&nbsp;<span class="bracket">{</span>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">width</span><span class="val">:100px;</span>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">height</span><span class="val">:100px;</span>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">background-color</span><span class="val">:blue;</span>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">animation-name</span><span class="val">:100px;</span>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">animation-duration</span><span class="val">:3s;</span>
+        <br>
+        <span class="bracket">}</span>
+      </li>
+    </ul>
+  </section>
+  <section class="main-section" id="animation-duration">
+    <header><h3>animation-duration</h3></header>
+    <code>animation-duration</code>
+    <p>...</p>
+    <p>...</p>
+    <ul>
+      <li></li>
+    </ul>
+  </section>
+  <section class="main-section" id="animation-delay">
+    <header><h3>animation-delay</h3></header>
+    <code>animation-delay</code>
+    <p>...</p>
+    <p>Below you will find an example css animation and it's code.</p>
+    <ul>
+      <li>Example</li>
+    </ul>
+  </section>
+  <section class="main-section" id="animation-iteration-count">
+    <header><h3>animation-iteration-count</h3></header>
+    <code>animation-iteration-count</code>
+    <p>...</p>
+    <p>Below you will find an example css animation and it's code.</p>
+    <ul>
+      <li>Example</li>
+    </ul>
+  </section>
+  </div>
+</main>
+</body>
+</html>
