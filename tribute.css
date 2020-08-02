@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Vollkorn:ital,wght@0,500;0,900;1,400&display=swap');
+
+#main {
+  text-align:center;
+  padding-left:10vw;
+  padding-right:10vw;
+  padding-top:10vh;
+  padding-bottom:10vh;
+  font-family: 'PT Sans', sans-serif;
+  background-image:url("https://www.dropbox.com/s/b3ooz9l7bfuozji/full-bloom.png?raw=1");
+  line-height:1.5;
+}
+
+#title {
+  font-family: 'Vollkorn', serif;
+  font-size:4em;
+  padding:0;
+  margin:0;
+}
+
+h2 {
+  padding:0;
+  margin-top:0;
+  margin-bottom:10vh;
+}
+
+img {
+  margin: auto;
+  display: block;
+}
+
+#img-div {
+  padding-top:1.5em;
+  background-color:crimson;
+  border:1px solid transparent;
+  border-radius:8px;
+}
+
+figure {
+  display:inline-block;
+}
+
+figure img {
+  max-width:100%;
+}
+
+#image {
+  max-width:100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  filter: drop-shadow(0 0 1.25rem maroon);
+}
+
+#img-caption {
+  font-weight:bold;
+  color:#ebebeb;
+  font-size: .8em;
+  margin-top:2vh;
+}
+
+figcaption {
+  font-weight:bold;
+  font-size:.8em;
+}
+
+#img-caption a,
+#img-caption a:hover,
+#img-caption a:visited {
+  color:black;
+}
+
+#tribute-info {
+/*   font-size:1.2em; */
+}
+
+p {
+  font-size:1.2em;
+  margin-top:4vh;
+  margin-bottom:4vh;
+}
+
+#tribute-link {}
+
+iframe {
+  display:inline-block;
+}
+
+caption {
+  display:inline-block;
+}
+
+@media screen and (max-width:640px){
+  iframe {
+    display:none;
+  }
+  caption {
+    display:none;
+  }
+}
